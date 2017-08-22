@@ -16,7 +16,7 @@ namespace Connection_to_Dynamics_crm
         static IOrganizationService _service;
         public static void Main(string[] args)
         {
-            ConnectToMSCRM("your username", "your password", "your url ie cmr go to  settings->customization->developer resources->paste the svc url");
+            ConnectToMSCRM("your username", "your password", "your url ie crm go to  settings->customization->developer resources->paste the .svc url");
             Guid userid = ((WhoAmIResponse)_service.Execute(new WhoAmIRequest())).UserId;
             if (userid != Guid.Empty)
             {
